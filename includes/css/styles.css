@@ -1,0 +1,338 @@
+/*
+
+My Custom CSS
+=============
+
+Author:  Brad Hussey
+Updated: August 2013
+Notes:	 Hand coded for Udemy.com
+
+*/
+
+
+/* --------------------------------------
+   Layout
+   -------------------------------------- */
+
+#features {
+	text-align: center;
+}
+
+#features img {
+	margin: 0 0 20px;
+}
+
+#inputMessage {
+	margin-bottom: 15px;
+}
+
+footer {
+	background: #333;
+	color: #eee;
+	font-size: 11px;
+	padding: 20px;
+}
+
+
+/* --------------------------------------
+   Typography
+   -------------------------------------- */
+
+body {
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizelegibility;
+}
+
+.well .page-header {
+	margin-top: 0;
+}
+
+.well .page-header h1 {
+	margin-top: 0;
+}
+
+ul.unstyled {
+	list-style: none;
+	padding: 0;
+}
+
+
+/* --------------------------------------
+   Navbar
+   -------------------------------------- */
+
+#searchInput {
+	width: 200px;
+}
+
+.navbar-brand {
+	padding: 13px 15px;
+}
+   
+   
+/* --------------------------------------
+   Carousel
+   -------------------------------------- */
+
+#myCarousel {
+	margin-top: 60px;
+}
+
+.carousel-caption {
+	font-size: 24px;
+}
+
+.carousel-caption h4 {
+	font-size: 32px;
+}
+
+#myCarousel .item { height: 400px; }
+
+#slide1 {
+	background: url('images/1.jpg') top center no-repeat;
+}
+
+#slide2 {
+	background: url('images/2.jpg') top center no-repeat;
+}
+
+#slide3 {
+	background: url('images/3.jpg') top center no-repeat;
+}
+
+
+/* --------------------------------------
+   Global Styles
+   -------------------------------------- */
+
+.alert {
+	margin-top: 20px;
+	display: none;
+}
+
+.well {
+	margin: 20px 0;
+}
+
+.tabbable img.thumbnail {
+	margin: 0 20px 10px 0;
+}
+
+.thumbnails {
+	margin: 20px 0;
+}
+
+.thumbnail {
+	position: relative;
+}
+
+.thumbnail h3 {
+	font-size: 16px;
+	margin: 0 0 10px;
+	line-height: 20px;
+}
+
+.thumbnail .price {
+	font-size: 22px;
+	position: absolute;
+	top: -10px;
+	right: -10px;
+	padding: 10px;
+}
+
+.thumbnail .price sup {
+	font-weight: normal;
+	font-size: 12px;
+}
+
+.thumbnail span.glyphicon {
+	margin-right: 5px;
+}
+
+
+/* --------------------------------------
+   Media Queries
+   -------------------------------------- */
+
+/* Portrait & landscape phone */
+@media (max-width: 480px) {
+	
+	.thumbnail .price {
+		font-size: 14px;
+	}
+	
+	.thumbnail .price sup {
+		font-size: 10px;
+	}
+	
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+	
+	#myCarousel .item { height: 310px; }
+	
+	#slide1 {
+		background: url('images/1.jpg') top center no-repeat;
+	}
+	
+	#slide2 {
+		background: url('../../images/carousel_small_02.jpg') top center no-repeat;
+	}
+	
+	#slide3 {
+		background: url('../../images/carousel_small_03.jpg') top center no-repeat;
+	}
+	
+	.carousel-caption {
+		font-size: 16px;
+	}
+	
+	.carousel-caption h4 {
+		font-size: 22px;
+	}
+	
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+
+	#myCarousel .item { height: 500px; }
+	
+	#slide1 {
+		background: url('../../images/4.jpg') top center no-repeat;
+	}
+	
+	#slide2 {
+		background: url('../../images/5.jpg') top center no-repeat;
+	}
+	
+	#slide3 {
+		background: url('../../images/3.jpg') top center no-repeat;
+	}
+
+
+}
+
+
+/*
+http://www.freshdesignweb.com/css3-hover-effects-with-websymbols-tutorial.html
+*/
+
+@font-face {
+    font-family: 'WebSymbolsRegular';
+    src: url('images/websymbols/websymbols-regular-webfont.eot');
+    src: url('images/websymbols/websymbols-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('images/websymbols/websymbols-regular-webfont.woff') format('woff'),
+         url('images/websymbols/websymbols-regular-webfont.ttf') format('truetype'),
+         url('images/websymbols/websymbols-regular-webfont.svg#WebSymbolsRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.ca-menu{
+    padding:0;
+    margin:20px auto;
+    width: 1020px;
+	font-family: 'Dosis', sans-serif;
+}
+.ca-menu li{
+    width: 230px;
+    height: 230px;
+    border: 10px solid #f6f6f6;
+    overflow: hidden;
+    position: relative;
+    float:left;
+    background: #fff;
+    margin-right: 4px;
+    -webkit-box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    -moz-box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    -webkit-border-radius: 125px;
+    -moz-border-radius: 125px;
+    border-radius: 125px;
+    -webkit-transition: all 400ms linear;
+    -moz-transition: all 400ms linear;
+    -o-transition: all 400ms linear;
+    -ms-transition: all 400ms linear;
+    transition: all 400ms linear;
+}
+.ca-menu li:last-child{
+    margin-right: 0px;
+}
+.ca-menu li a{
+    text-align: left;
+    width: 100%;
+    height: 100%;
+    display: block;
+    color: #333;
+    position: relative;
+   -moz-box-shadow:0px 0px 3px #000000;
+   -webkit-box-shadow:0px 0px 3px #000000;
+   box-shadow:0px 0px 3px #000000;
+
+}
+.ca-icon{
+    font-family: 'WebSymbolsRegular', cursive;
+    font-size: 40px;
+    color: #f6f6f6;;
+    line-height: 60px;
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    left: 0px;
+    top: 30px;
+    text-align: center;
+    -webkit-transition: all 400ms linear;
+    -moz-transition: all 400ms linear;
+    -o-transition: all 400ms linear;
+    -ms-transition: all 400ms linear;
+    transition: all 400ms linear;
+}
+.ca-main{
+    font-size: 24px;
+    position: absolute;
+    top: 110px;
+    height: 80px;
+    width: 170px;
+    left: 50%;
+    margin-left: -85px;
+    opacity: 0.8;
+    text-align: center;
+}
+.ca-sub{
+    text-align:center;
+    color: #000;
+    font-size: 26px;
+    position: absolute;
+    height: 80px;
+    width: 170px;
+    left: 50%;
+    margin-left: -85px;
+    top: 110px;
+    opacity: 0;
+    -webkit-transition: all 400ms linear;
+    -moz-transition: all 400ms linear;
+    -o-transition: all 400ms linear;
+    -ms-transition: all 400ms linear;
+    transition: all 400ms linear;
+}
+.ca-menu li:hover{
+    background: #f7f7f7;
+    border-color: #fff;
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+    box-shadow: 0 45px 60px -50px #000000;
+}
+.ca-menu li:hover .ca-icon{
+    color: #555;
+    font-size: 60px;
+}
+.ca-menu li:hover .ca-main{
+    display: none;
+}
+.ca-menu li:hover .ca-sub{
+    opacity: 0.8;
+}
